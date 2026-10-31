@@ -1,6 +1,9 @@
-# prompt-architect-executor — kurulum notu
+# Prompt Architect & Executor
 
-Bu klasördeki `SKILL.md`, claude.ai hesabındaki skill'in düzeltilmiş sürümüdür.
-Hesaptaki skill salt-okunur senkronize edilir (`~/.claude/skills/synced/...`); orada yapılan yerel
-düzenleme bir sonraki senkronda silinir. Kalıcı olması için bu içeriği claude.ai > Skills
-altında skill'e yapıştırın (veya repo `.claude/skills/` altına kopyalayın).
+This folder contains an instruction-based Agent Skill and its MIT license.
+Read `SKILL.md` before installing it in a skill location supported by your host.
+Confirm discovery and invocation in that actual host; packaging does not establish compatibility.
+
+See the [repository overview](https://github.com/Mucaktr/prompt-architect-executor) for a small read-only example and release limits.
+The original account-specific installation note is preserved in
+[`docs/INSTALLATION-NOTE.original.md`](https://github.com/Mucaktr/prompt-architect-executor/blob/main/docs/INSTALLATION-NOTE.original.md) as historical context.
