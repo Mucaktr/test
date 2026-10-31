@@ -18,7 +18,7 @@ Hangi kabul ölçütlerinin mevcut malzemeden doğrulanabildiğini açıkla.
 
 ## Durum
 
-`0.1.0-rc1` bir paketleme ön sürümüdür. Önceki repo adı `test` idi. Skill'in çekirdek yönergeleri korunmuştur. Eski ZIP, Git'teki kaynakla zaten eşleşiyordu; ilk karşılaştırmadaki fark Windows satır sonlarından kaynaklanıyordu. Yeni pakete lisans ve kurulum özeti eklendi. `python -X utf8 scripts/check_package.py` dosya eşliğini kontrol eder.
+`0.1.0-rc2` bir paketleme ön sürümüdür. Önceki repo adı `test` idi. Skill'in çekirdek yönergeleri korunmuştur. Eski ZIP, Git'teki kaynakla zaten eşleşiyordu; ilk karşılaştırmadaki fark Windows satır sonlarından kaynaklanıyordu. Yeni pakete lisans ve kurulum özeti eklendi. `python -X utf8 scripts/check_package.py` dosya eşliğini kontrol eder.
 
 Paket kontrolü; model davranışını, görev başarısını, uygulamada kurulumu veya production güvenliğini doğrulamaz. Skill yönergeleri uygulamanın üst düzey kurallarının ve izin mekanizmalarının yerine geçmez.
 

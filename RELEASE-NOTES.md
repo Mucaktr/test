@@ -1,3 +1,11 @@
+# 0.1.0-rc2 — Canonical package text
+
+The first publication CI failed because LICENSE and the package README had Windows CRLF bytes inside the ZIP while Git stored LF source bytes. The skill core itself already matched.
+
+RC2 adds an explicit LF package builder with fixed ZIP metadata, rebuilds the package, and keeps the exact source/archive check. This is a packaging correction, not a new skill behavior acceptance.
+
+The original failed CI is preserved: https://github.com/Mucaktr/prompt-architect-executor/actions/runs/41209596532 . RC1 tag/assets remain unchanged.
+
 # 0.1.0-rc1 — Packaging prerelease
 
 - Public identity changes from `test` to `prompt-architect-executor`.

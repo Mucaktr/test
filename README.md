@@ -36,7 +36,7 @@ which acceptance criteria can and cannot be checked from the supplied material.
 
 ## Status and limits
 
-**0.1.0-rc1 is a packaging prerelease.** The original repository was named `test`.
+**0.1.0-rc2 is a packaging prerelease.** The original repository was named `test`.
 The skill instructions were not changed in this publication update. The previously
 checked-in ZIP already matched Git's committed `SKILL.md`; an initial working-tree
 comparison differed only because of Windows line endings. The new package adds
@@ -49,6 +49,7 @@ does not replace the host's system rules, permission controls, or sandbox.
 ## Validate the package locally
 
 ```text
+python -X utf8 scripts/build_package.py
 python -X utf8 scripts/check_package.py
 ```
 

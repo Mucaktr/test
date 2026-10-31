@@ -10,6 +10,7 @@ with zipfile.ZipFile(archive) as z:
     assert {'prompt-architect-executor/SKILL.md', 'prompt-architect-executor/README.md', 'prompt-architect-executor/LICENSE'} <= expected
     for p in files:
         member = 'prompt-architect-executor/' + p.relative_to(source).as_posix()
+        assert b'\r\n' not in z.read(member), 'Non-canonical text line endings: ' + member
         assert z.read(member) == p.read_bytes(), 'Source/archive mismatch: ' + member
     assert (source / 'SKILL.md').read_text(encoding='utf-8').startswith('---\nname: prompt-architect-executor\n')
 print('PASS: archive CRC, exact member set, required files, skill metadata and byte parity')
